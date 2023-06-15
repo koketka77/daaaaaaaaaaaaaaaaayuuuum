@@ -37,10 +37,15 @@
 .main-item{
     display: flex;
     align-items: center;
-    column-gap: 5px;
+    justify-content: space-between;
     padding: 10px 0;
     color: #a9a8d2;
     border-bottom: 1px solid #a9a8d2;
+}
+.main-item-left, .main-item-right{
+    column-gap: 5px;
+    display: flex;
+    align-items: center;
 }
 .footer{
     background-color: #24273d;
@@ -61,4 +66,20 @@
 }
 body{
     background: linear-gradient(90deg, rgba(112,13,90,1) 4%, rgba(79,2,67,1) 21%, rgba(63,13,84,1) 38%, rgba(69,17,94,1) 61%, rgba(105,8,77,1) 80%, rgba(105,24,85,1) 99%);
+    /* height: 100%; */
+}
+.allbtnall{
+    color: #001eff !important;
+}
+.compbtncompleted{
+    color:#001eff !important;
+
+}
+.activebtnactive{
+    color: #001eff !important;
+
+}
+.cartbtncart{
+    color: #001eff!important;
+
 }

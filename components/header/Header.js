@@ -19,8 +19,7 @@ const Header = ({data, setData}) => {
             <button onClick={addTodo} className="circle-btn">+</button>
             <input onChange={e =>{
                 setText(e.target.value)
-            }} type="text" 
-            value={text}/>
+            }} type="text" value={text}/>
 
 
         </div>

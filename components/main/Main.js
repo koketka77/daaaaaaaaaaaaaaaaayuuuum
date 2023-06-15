@@ -1,12 +1,25 @@
+import Btns from "./Btns";
 
-const Main = ({todoList}) => {
+const Main = ({todoList, setkey, status}) => {
     return (
         <div className="main">
             {
                 todoList.map(item => {
                     return <div key={item.id} className="main-item">
-                <button className="circle-btn"></button>
+                        <div className="main-item-left">
+                <button onClick={()=>{
+                    setkey('completed', item.id)
+                }} className="circle-btn">{item.completed ? '+' : ''}
+                
+               
+                </button>
                 <p>{item.text}</p>
+                
+                </div>
+                <div className="main-item-tight">
+                    <Btns item={item} setkey={setkey} status={status}/>
+                    
+                </div>
             </div>
                 })
             }
